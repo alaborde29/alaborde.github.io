@@ -1,0 +1,30 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.custom-cursor {
+  position: fixed;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  mix-blend-mode: exclusion;
+  pointer-events: none;
+  transition: opacity 300ms;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  /* visibility: hidden; */
+  transform-origin: center center;
+  transition: width 300ms, height 300ms;
+}
+
+.hovered .custom-cursor:hover,
+.hovered .custom-cursor.hovered {
+  width: 320px; /* Adjust the size as needed */
+  height: 32px; /* Adjust the size as needed */
+}
+
+body {
+  overflow-x: hidden;
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Maze",
+        "link": "https://github.com/alaborde29/",
+        "desc": "A maze game written in pure WAT (WebAssembly Text)",
+        "image": "/images/cover1.jpg"
+    },
+    {
+        "title": "Other",
+        "link": "https://github.com/alaborde29/",
+        "desc": "The new other project that you want to ear about in the near future !!!",
+        "image": "/images/cover2.jpg"
+    }
+]
