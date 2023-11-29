@@ -2,7 +2,7 @@
 import gsap from 'gsap';
 import splitType from 'split-type';
 
-export const introAnimation = (onComplete) => {
+export const introAnimation = (onComplete: any) => {
   const tl = gsap.timeline({
     onComplete,
   });

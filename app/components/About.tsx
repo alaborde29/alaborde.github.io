@@ -3,7 +3,7 @@ import React from "react"
 import aboutInfos from "../../content/about.json"
 import Image from "next/image"
 
-const HoverImage = ({ src, alt, width, height }) => {
+const HoverImage = ({ src, alt, width, height }: any) => {
   return (
     <div className=" flex w-60 h-64 transition-transform duration-300 transform hover:scale-105  m-10">
       <div className="flex w-full h-full absolute top-0 left-0 transition-opacity duration-300">

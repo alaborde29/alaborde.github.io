@@ -8,7 +8,6 @@ import { Link, Element } from "react-scroll"
 import About from "./components/About"
 import Work from "./components/Work"
 import IntroAnimation from "./components/IntroAnimation"
-import ShaderPlane from "./components/ShaderPlane"
 
 export default function Home() {
   return (

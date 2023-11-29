@@ -11,7 +11,7 @@ const CustomCursor = () => {
   const cursorRef = useRef(null);
 
   useEffect(() => {
-    const cursor = cursorRef.current;
+    const cursor: any = cursorRef.current;
 
     // Set initial cursor position
     let currentX = window.innerWidth / 2;
@@ -24,8 +24,8 @@ const CustomCursor = () => {
     tl.to({}, { duration: 0.1, repeat: -1, onRepeat: updatePhysics });
 
     function updatePhysics() {
-      const targetX = gsap.getProperty(cursor, 'x');
-      const targetY = gsap.getProperty(cursor, 'y');
+      const targetX: any = gsap.getProperty(cursor, 'x');
+      const targetY: any = gsap.getProperty(cursor, 'y');
 
       gsap.to(cursor, {
         physics2D: { velocity: (currentX - targetX) * 0.5, angle: 0, gravity: 200 },
@@ -46,7 +46,7 @@ const CustomCursor = () => {
     }
 
     // Mousemove event to update cursor position
-    const onMouseMove = (e) => {
+    const onMouseMove = (e: any) => {
       gsap.to(cursor, { x: e.clientX, y: e.clientY, duration: 0.1 });
     };
 

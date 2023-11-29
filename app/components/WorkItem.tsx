@@ -2,9 +2,9 @@ import React from "react"
 import workInfos from "../../content/work.json"
 import Image from "next/image";
 import { ButtonBase, Typography } from "@mui/material";
-export default function WorkItem({ title }) {
+export default function WorkItem({ title }: any) {
 
-  const infos = workInfos.find((work) => work.title === title);
+  const infos: any = workInfos.find((work) => work.title === title);
 
   return (
     <ButtonBase 
