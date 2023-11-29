@@ -29,7 +29,6 @@ export default function Header() {
         className='fade-in invisible'>
         <Blob />
       </Canvas>
-      {/* <div className="h-screen w-screen flex justify-center items-center bg-pink-500 absolute top-0 left-0"/> */}
       <div className="h-screen w-screen flex justify-center items-center">
         <div className="flex flex-col justify-center items-center p-4">
           <div className="text-8xl -ml-48 reveal-text invisible">Alexandre</div>
