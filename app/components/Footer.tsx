@@ -19,8 +19,8 @@ export default function Footer() {
           <Typography>Made with ❤ from France!</Typography>
         </div>
       </div>
-      <ButtonBase className="flex justify-center items-center m-10 ">
-        <ArrowUpwardSharp style={{ fontSize: 140}} />
+      <ButtonBase disableRipple className="flex justify-center items-center ">
+        <ArrowUpwardSharp style={{ fontSize: 140}} className="flex m-10"/>
       </ButtonBase>
     </div>
 
