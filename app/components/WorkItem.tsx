@@ -9,14 +9,15 @@ export default function WorkItem({ title }: any) {
   return (
     <ButtonBase 
       disableRipple 
-      className="flex flex-col px-8 max-w-xl rounded overflow-hidden neumobox p-10 brightness-95 transform duration-100 hover:brightness-100"
+      className="flex flex-col px-8 max-w-xl rounded overflow-hidden p-10 brightness-95 transform duration-100 hover:brightness-100" //neumobox class
       href={infos.link}
       target="_blank"
     >
-      <img src={infos.image} alt={infos.title} className="w-full h-auto object-cover mb-4 rounded-3xl neumobox" />
-      <div className="flex flex-col px-6 py-4">
+      <img src={infos.image} alt={infos.title} className="w-full h-auto object-cover mb-4 rounded-xl" />
+      <div className="flex flex-col w-full px-6 py-4">
         <div className="font-bold text-3xl mb-2 mr-auto">{infos.title}</div>
         <div className="text-xl text-left">{infos.desc}</div>
+        <div className="text-sm text-left pt-4">{infos.tags}</div>
       </div>
     </ButtonBase>
   )
