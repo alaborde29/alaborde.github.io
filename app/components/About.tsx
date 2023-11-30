@@ -1,7 +1,10 @@
+'use client'
+
 import { Typography } from "@mui/material"
 import React from "react"
 import aboutInfos from "../../content/about.json"
 import Image from "next/image"
+import { Element } from "react-scroll"
 
 const HoverImage = ({ src, alt, width, height }: any) => {
   return (
@@ -23,7 +26,7 @@ const HoverImage = ({ src, alt, width, height }: any) => {
 
 export default function About() {
   return (
-    <div className="flex flex-col justify-center items-center p-4 text-7xl font-bold pb-20"> 
+    <Element name="about" className="flex flex-col justify-center items-center p-4 text-7xl font-bold pb-36"> 
       <Typography className="flex flex-row justify-center items-center p-4 text-7xl font-bold py-20">About</Typography>
       
       <p className="flex-wrap text-center font-bold text-3xl mb-2">{aboutInfos.text}</p>
@@ -36,6 +39,6 @@ export default function About() {
         <HoverImage src={"/images/c_logo.png"} alt={"fff"} width={100} height={100} />
       </div>
 
-    </div>
+    </Element>
   )
 }

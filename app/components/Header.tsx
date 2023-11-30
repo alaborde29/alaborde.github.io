@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect } from 'react';
 import { headerAnimation, textBounce, fadeIn } from '../animations';
+import { Element } from 'react-scroll';
 import HeaderBackground from './HeaderBackground';
 import { Canvas } from '@react-three/fiber';
 
@@ -23,14 +24,14 @@ export default function Header() {
   }, []);
 
   return (
-    <div>
+    <Element name='header' className='"flex pb-36'>
       <Canvas style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
         camera={{ position: [0, 0, 10], fov: 50 }}
         className='fade-in invisible'>
         <HeaderBackground />
       </Canvas>
       <div className="h-screen w-screen flex justify-center items-center">
-        <div className="flex flex-col justify-center items-center p-4">
+        <div className="flex flex-col justify-center items-center p-4 text-white">
           <div className="text-8xl -ml-48 reveal-text invisible">Alexandre</div>
           <div className="text-8xl ml-48 reveal-text invisible">Laborde</div>
           <div className="text-3xl mt-10 relative">
@@ -39,7 +40,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-    </div>
+    </Element>
   );
 }
 

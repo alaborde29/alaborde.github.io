@@ -1,3 +1,5 @@
+'use client'
+
 import React from "react"
 import Header from "./components/Header"
 
@@ -11,11 +13,12 @@ import IntroAnimation from "./components/IntroAnimation"
 
 export default function Home() {
   return (
-    <main className="bg-black h-full w-full text-white">
+    <main className="bg-zinc-50 h-full w-full ">
+      <Element name="top"/>
       <IntroAnimation />
       <CustomCursor />
       <div className="flex flex-col px-1/5 ">
-        <Header />
+        <Header/>
         <div className="mx-4 sm:mx-10 md:mx-20 lg:mx-32 xl:mx-96 px-10 ">
           {/* <Element name="work"> */}
           <Work />

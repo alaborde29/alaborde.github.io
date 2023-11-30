@@ -8,7 +8,7 @@ import fragmentShader from "../../public/shaders/fragment"
 import { useFrame } from "@react-three/fiber";
 import { MathUtils } from "three";
 
-const Blob = () => {
+const HeaderBackground = () => {
   // reference for mesh
   const mesh: any = useRef<THREE.Mesh>();
   const uniforms = useMemo(() => {
@@ -49,4 +49,4 @@ const Blob = () => {
   );
 };
 
-export default Blob;
+export default HeaderBackground;
