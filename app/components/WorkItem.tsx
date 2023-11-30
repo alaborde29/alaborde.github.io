@@ -9,7 +9,7 @@ export default function WorkItem({ title }: any) {
   return (
     <ButtonBase 
       disableRipple 
-      className="flex flex-col px-8 max-w-xl rounded overflow-hidden p-10 brightness-95 transform duration-100 hover:brightness-100" //neumobox class
+      className="flex flex-col px-8 max-w-xl rounded overflow-hidden p-10 brightness-75 shadow-xl transform duration-300 hover:brightness-100" //neumobox class
       href={infos.link}
       target="_blank"
     >
