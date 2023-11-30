@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <main className="bg-zinc-50 h-full w-full ">
       <Element name="top"/>
-      {/* <IntroAnimation /> */}
+      <IntroAnimation />
       <CustomCursor />
       <div className="flex flex-col px-1/5 ">
         <Header/>
