@@ -1,15 +1,26 @@
 'use client'
 
-import { Typography } from "@mui/material"
 import React from "react"
 import WorkItem from "./WorkItem"
 import { Element } from "react-scroll"
 
 export default function Work() {
   return (
-    <Element name="work" className=" pb-36">
-      <Typography className="flex flex-row justify-center items-center p-4 text-7xl font-bold pb-20">Work</Typography>
-      <div className="flex flex-wrap justify-center items-center py-4 space-x-10">
+    <Element name="work" className="
+      md:mx-20 mb-36
+      lg:mx-32
+      xl:mx-60
+    ">
+      <p className="
+        flex flex-row justify-center items-center font-bold text-5xl
+        pb-10
+        md:p-4 md:text-7xl
+      ">Work</p>
+      <div className="
+        flex flex-col justify-center items-center py-4
+        space-y-20
+        md:flex-row 
+        ">
         <WorkItem title="Portfolio"></WorkItem>
         <WorkItem title="Nolosay"></WorkItem>
       </div>

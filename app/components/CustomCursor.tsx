@@ -4,7 +4,6 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { Physics2DPlugin } from 'gsap/all';
 
-// Register the Physics2DPlugin with GSAP
 gsap.registerPlugin(Physics2DPlugin);
 
 const CustomCursor = () => {
@@ -26,17 +25,18 @@ const CustomCursor = () => {
     function updatePhysics() {
       const targetX: any = gsap.getProperty(cursor, 'x');
       const targetY: any = gsap.getProperty(cursor, 'y');
-
+    
       gsap.to(cursor, {
-        physics2D: { velocity: (currentX - targetX) * 0.5, angle: 0, gravity: 200 },
         x: targetX,
         y: targetY,
         duration: 1,
+        ease: 'power1.out', // Optional ease for the motion
       });
-
+    
       currentX = targetX;
       currentY = targetY;
     }
+    
 
     function updateCursor() {
       const cursorX = gsap.getProperty(cursor, 'x');
