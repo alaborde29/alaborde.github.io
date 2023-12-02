@@ -8,7 +8,7 @@ import { Element } from "react-scroll"
 const HoverImage = ({ src, alt, width, height }: any) => {
   return (
     <div className="
-      flex w-20 h-24
+      flex w-20 h-24 m-4
       md:w-40 md:h-44 md:p-4
       lg:w-60 lg:h-64
     ">
