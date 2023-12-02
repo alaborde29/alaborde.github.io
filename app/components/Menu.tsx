@@ -28,15 +28,15 @@ export default function Menu() {
           duration={2000}
           to="footer" ><ButtonBase className="transition duration-300 hover:scale-125">Contact</ButtonBase></Link>
       </div>
-      <div className="
+      {/* <div className="
         flex flex-col fixed top-0 right-0 pr-5 pt-5 md:pr-10 items-end visible
         md:text-xl md:invisible
         lg:text-3xl
       ">
-        <ButtonBase disableRipple className="flex justify-center items-center ">
-          <MenuIcon className="text-4xl" />
+        <ButtonBase disableRipple className="flex justify-center items-center">
+          <MenuIcon className="text-4xl mix-blend-screen" />
         </ButtonBase>
-      </div>
+      </div> */}
     </div>
   )
 }
