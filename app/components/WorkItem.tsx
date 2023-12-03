@@ -1,7 +1,6 @@
 import React from "react"
 import workInfos from "../../content/work.json"
-import Image from "next/image";
-import { ButtonBase, Typography } from "@mui/material";
+import { ButtonBase } from "@mui/material";
 export default function WorkItem({ title }: any) {
 
   const infos: any = workInfos.find((work) => work.title === title);
@@ -11,9 +10,7 @@ export default function WorkItem({ title }: any) {
       disableRipple 
       className="
         flex flex-col mx-8 rounded-xl brightness-75 shadow-lg overflow-clip
-        transform duration-300 hover:brightness-100
-        w-12/12
-        md:
+        transform duration-300 hover:brightness-100 w-12/12
         " //neumobox class
       href={infos.link}
       target="_blank"

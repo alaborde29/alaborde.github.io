@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <main className="bg-zinc-50 h-full w-full overflow-x-hidden">
       <Element name="top"/>
-      <IntroAnimation />
+      {/* <IntroAnimation /> */}
       <CustomCursor />
       <div className="flex flex-col">
         <Header/>

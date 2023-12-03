@@ -10,7 +10,7 @@ export default function Menu() {
     // mettre un composant qui s'affiche quand la taille est trop basse
     <div>
       <div className="
-      flex flex-col fixed top-0 right-0 pt-10 md:pr-10 items-end invisible
+      flex flex-col fixed top-0 right-0 pt-10 md:pr-10 items-end invisible z-20
       md:text-xl md:visible
       lg:text-3xl
     ">
