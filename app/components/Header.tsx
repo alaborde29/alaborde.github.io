@@ -4,8 +4,12 @@ import { headerAnimation, textBounce, fadeIn } from '../animations';
 import { Element } from 'react-scroll';
 import HeaderBackground from './HeaderBackground';
 import { Canvas } from '@react-three/fiber';
+import "../i18n"
+import { useTranslation } from 'react-i18next';
 
 export default function Header() {
+  const { t, i18n } = useTranslation('common');
+
   useEffect(() => {
     const animation = headerAnimation();
     const textbounce = textBounce();
@@ -27,11 +31,11 @@ export default function Header() {
     <Element name='header'>
       <Canvas style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
         camera={{ position: [0, 0, 10], fov: 50 }}
-        className='fade-in invisible'>
+        className='fade-in invisible '>
         <HeaderBackground />
       </Canvas>
       <div className="
-        h-screen w-screen flex justify-center items-center 
+        h-screen w-screen flex justify-center items-center select-none
       ">
         <div className="
           flex flex-col justify-center items-center p-4 text-white
@@ -57,7 +61,7 @@ export default function Header() {
             <div className="absolute top-0 bottom-0 right-0 bg-black"></div>
             <div style={{ zIndex: 2 }} className='
               undertext invisible
-            '>Software Developer</div>
+            '>{t("headerTitle")}</div>
           </div>
         </div>
       </div>

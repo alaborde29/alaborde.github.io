@@ -1,0 +1,11 @@
+{
+  "headerTitle": "Software Developer",
+  "sections" : {
+    "home" : "Home",
+    "work" : "Work",
+    "about" : "About",
+    "contact" : "Contact"
+  },
+  "aboutInfos": "Hey there! I'm Alexandre Laborde, a web developer and computer science student at Epitech. 🚀 I'm all about diving into the realms of Front-end and UI. It's my true passion, and I aspire to make it my full-time gig in the future! 💻✨",
+  "hire-me": "Hire me !"
+}

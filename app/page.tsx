@@ -10,8 +10,12 @@ import { Link, Element } from "react-scroll"
 import About from "./components/About"
 import Work from "./components/Work"
 import IntroAnimation from "./components/IntroAnimation"
+import "./i18n"
+import { useTranslation } from 'react-i18next';
 
 export default function Home() {
+  const { t, i18n } = useTranslation('common');
+
   return (
     <main className="bg-zinc-50 h-full w-full overflow-x-hidden">
       <Element name="top"/>
@@ -20,7 +24,7 @@ export default function Home() {
       <div className="flex flex-col">
         <Header/>
         <Work />
-        <div className="mx-4 sm:mx-10 md:mx-20 lg:mx-32 xl:mx-60 px-10 ">
+        <div className=" sm:mx-10 md:mx-20 lg:mx-32 xl:mx-60 px-10 ">
           <About />
         </div>
       </div>

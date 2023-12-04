@@ -23,11 +23,11 @@ export default function Footer() {
           md:flex-row
         ">
           <div className="
-            flex flex-col items-center text-5xl font-bold
+            flex flex-col items-center text-5xl font-bold select-none
             md:text-5xl
             lg:text-7xl
           ">
-            <div className="-ml-11 md:ml-0">Alexandre</div>
+            <div className="-ml-11 md:ml-0 ">Alexandre</div>
             <div className="ml-20">Laborde</div>
           </div>
           <FooterSocials />
