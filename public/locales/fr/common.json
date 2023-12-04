@@ -6,6 +6,10 @@
     "about" : "A propos",
     "contact" : "Contact"
   },
-  "aboutInfos": "Salut ! Je suis Alexandre Laborde, un passionné de développement web et étudiant en informatique à Epitech. 🚀 J'adore explorer le monde du Front-end et de l'UI. C'est d'ailleurs ma grande passion, et j'espère bien en faire mon métier à l'avenir! 💻✨",
+  "intro" : {
+    "hello": "Bonjour",
+    "welcome": "et Bienvenue."
+  },
+  "aboutInfos": "Salut ! Je suis Alexandre Laborde, un passionné de développement web et étudiant en informatique à Epitech. 🚀 \n\nJ'adore explorer le monde du Front-end et de l'UI. C'est d'ailleurs ma grande passion, et j'espère bien en faire mon métier à l'avenir ! 💻✨",
   "hire-me": "Engagez moi !"
 }

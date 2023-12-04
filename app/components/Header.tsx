@@ -14,12 +14,6 @@ export default function Header() {
     const animation = headerAnimation();
     const textbounce = textBounce();
     const fadein = fadeIn();
-    // textbounce.delay(1)
-    // animation.play();
-    // textbounce.play();
-    // fadein.play()
-
-    // Clean up animation on component unmount
     return () => {
       animation.kill();
       fadein.kill();
@@ -59,9 +53,7 @@ export default function Header() {
             relative
           ">
             <div className="absolute top-0 bottom-0 right-0 bg-black"></div>
-            <div style={{ zIndex: 2 }} className='
-              undertext invisible
-            '>{t("headerTitle")}</div>
+            <div style={{ zIndex: 2 }} className={"undertext invisible ${animation.isActive() ? 'reveal-text' : 'invisible'"}>{t("headerTitle")}</div>
           </div>
         </div>
       </div>

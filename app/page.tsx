@@ -12,6 +12,7 @@ import Work from "./components/Work"
 import IntroAnimation from "./components/IntroAnimation"
 import "./i18n"
 import { useTranslation } from 'react-i18next';
+import LanguageSwitch from "./components/LanguageSwitch"
 
 export default function Home() {
   const { t, i18n } = useTranslation('common');
@@ -29,6 +30,7 @@ export default function Home() {
         </div>
       </div>
       <Footer />
+      <LanguageSwitch/>
       <Menu />
     </main>
   )
