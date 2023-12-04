@@ -1,6 +1,5 @@
 'use client'
 
-import { ButtonBase, Typography } from "@mui/material"
 import React from "react"
 import FooterSocials from "./FooterSocials"
 import { ArrowUpwardSharp } from "@mui/icons-material"
@@ -36,18 +35,19 @@ export default function Footer() {
           flex flex-col justify-between items-center mb-16
           md:pr-8 md:flex-row md:mb-0
         ">
-          <Typography>Copyright ©2023 A-L</Typography>
-          <Typography>Made with ❤ from France!</Typography>
+          <p>Copyright ©2023 A-L</p>
+          <p>Made with ❤ from France!</p>
         </div>
       </div>
       <Link smooth={true}
         duration={1000}
         to="top">
-        <ButtonBase disableRipple className="flex justify-center items-center ">
-          <ArrowUpwardSharp className="flex m-10 text-9xl transition duration-300 hover:scale-125" />
-        </ButtonBase>
+        <button className="flex justify-center items-center ">
+          <div className="flex m-10 text-9xl transition duration-300 hover:scale-125">
+            <ArrowUpwardSharp sx={{fontSize: "8rem"}} />
+          </div>
+        </button>
       </Link>
     </Element>
-
   )
 }

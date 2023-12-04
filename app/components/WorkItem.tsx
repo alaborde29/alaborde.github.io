@@ -1,19 +1,21 @@
 import React from "react"
 import workInfos from "../../content/work.json"
-import { ButtonBase } from "@mui/material";
 export default function WorkItem({ title }: any) {
 
   const infos: any = workInfos.find((work) => work.title === title);
 
+  const handleButtonClick = () => {
+    // Handle button click action if needed
+    window.open(infos.link, "_blank");
+  };
+
   return (
-    <ButtonBase 
-      disableRipple 
+    <button 
       className="
         flex flex-col mx-8 rounded-xl brightness-75 shadow-lg overflow-clip
         transform duration-300 hover:brightness-100 w-12/12
         " //neumobox class
-      href={infos.link}
-      target="_blank"
+      onClick={handleButtonClick}
     >
       <img src={infos.image} alt={infos.title} className="
         w-full object-cover shadow-inner"
@@ -24,6 +26,6 @@ export default function WorkItem({ title }: any) {
         <div className="text-lg text-left">{infos.desc}</div>
         <div className="text-sm text-left pt-4">{infos.tags}</div>
       </div>
-    </ButtonBase>
+    </button>
   )
 }

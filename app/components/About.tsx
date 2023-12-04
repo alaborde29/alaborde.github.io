@@ -6,7 +6,6 @@ import Image from "next/image"
 import { Element } from "react-scroll"
 import "../i18n"
 import { useTranslation } from 'react-i18next';
-import { ButtonBase } from "@mui/material"
 
 const HoverImage = ({ src, alt, width, height }: any) => {
   return (
