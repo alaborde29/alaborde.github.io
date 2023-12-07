@@ -3,7 +3,7 @@ import "../i18n"
 import { useTranslation } from 'react-i18next';
 
 const LanguageSwitch = () => {
-  const { t, i18n } = useTranslation('common');
+  const { t, i18n } = useTranslation('translation');
 
   return (
     <div className="

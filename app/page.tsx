@@ -15,7 +15,7 @@ import { useTranslation } from 'react-i18next';
 import LanguageSwitch from "./components/LanguageSwitch"
 
 export default function Home() {
-  const { t, i18n } = useTranslation('common');
+  const { t, i18n } = useTranslation('translation');
 
   return (
     <main className="bg-zinc-50 h-full w-full overflow-x-hidden">

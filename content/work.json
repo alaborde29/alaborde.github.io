@@ -2,14 +2,16 @@
     {
         "title": "Portfolio",
         "link": "https://github.com/alaborde29/alaborde.github.io",
-        "desc": "My own portfolio website ! ",
+        "descEn": "My own portfolio website ! ",
+        "descFr": "Mon propre portfolio en ligne ! ",
         "tags": "Website, React, Next.js, GSAP, React Three Fiber",
         "image": "/images/portfolio.png"
     },
     {
         "title": "Nolosay",
         "link": "https://nolosay.com",
-        "desc": "Nolosay showcase site - Nolosay application website in development.",
+        "descEn": "Nolosay showcase site - Nolosay application website in development.",
+        "descFr": "Site vitrine Nolosay - Application de bureau Nolosay en cours de développement",
         "tags": "Website, React, Redwood JS, MUI",
         "image": "/images/nolosay.png"
     }

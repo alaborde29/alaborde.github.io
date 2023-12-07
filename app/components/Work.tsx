@@ -5,10 +5,11 @@ import WorkItem from "./WorkItem"
 import { Element } from "react-scroll"
 import "../i18n"
 import { useTranslation } from 'react-i18next';
+import { Fade } from "react-awesome-reveal"
 
 export default function Work() {
-  const { t, i18n } = useTranslation('common');
-  
+  const { t, i18n } = useTranslation('translation');
+
   return (
     <Element name="work" className="
       md:mx-20 mb-36
@@ -26,8 +27,12 @@ export default function Work() {
         max-w-screen-xl mx-auto
         md:flex-row 
         ">
-        <WorkItem title="Portfolio"></WorkItem>
-        <WorkItem title="Nolosay"></WorkItem>
+        <Fade direction="up" triggerOnce delay={500}>
+
+          <WorkItem title="Portfolio"></WorkItem>
+          <WorkItem title="Nolosay"></WorkItem>
+        </Fade>
+
       </div>
     </Element>
   )

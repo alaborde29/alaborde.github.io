@@ -8,7 +8,7 @@ import "../i18n"
 import { useTranslation } from 'react-i18next';
 
 export default function Header() {
-  const { t, i18n } = useTranslation('common');
+  const { t, i18n } = useTranslation('translation');
 
   useEffect(() => {
     const animation = headerAnimation();
@@ -53,7 +53,7 @@ export default function Header() {
             relative
           ">
             <div className="absolute top-0 bottom-0 right-0 bg-black"></div>
-            <div style={{ zIndex: 2 }} className={"undertext invisible ${animation.isActive() ? 'reveal-text' : 'invisible'"}>{t("headerTitle")}</div>
+            <div style={{ zIndex: 2 }} className={"undertext ${animation.isActive() ? 'reveal-text' : 'invisible'}"}>{t("headerTitle")}</div>
           </div>
         </div>
       </div>

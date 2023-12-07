@@ -28,6 +28,7 @@
     "next-translate": "^2.6.2",
     "next-transpile-modules": "^10.0.1",
     "react": "^18",
+    "react-awesome-reveal": "^4.2.7",
     "react-dom": "^18",
     "react-gridlines": "^1.1.7",
     "react-i18next": "^13.5.0",

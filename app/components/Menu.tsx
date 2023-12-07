@@ -8,7 +8,7 @@ import "../i18n"
 import { useTranslation } from 'react-i18next';
 
 export default function Menu() {
-  const { t, i18n } = useTranslation('common');
+  const { t, i18n } = useTranslation('translation');
 
   return (
     // mettre un composant qui s'affiche quand la taille est trop basse
@@ -20,17 +20,17 @@ export default function Menu() {
     ">
         <Link smooth={true}
           duration={2000}
-          to="top"><ButtonBase className="transition duration-300 hover:scale-125">{t("sections.home")}</ButtonBase></Link>
+          to="top"><ButtonBase disableRipple className="transition duration-300 hover:scale-125">{t("sections.home")}</ButtonBase></Link>
         <Link smooth={true}
           offset={-100}
           duration={2000}
-          to="work" ><ButtonBase className="transition duration-300 hover:scale-125">{t("sections.work")}</ButtonBase></Link>
+          to="work" ><ButtonBase disableRipple className="transition duration-300 hover:scale-125">{t("sections.work")}</ButtonBase></Link>
         <Link smooth={true}
           duration={2000}
-          to="about" ><ButtonBase className="transition duration-300 hover:scale-125">{t("sections.about")}</ButtonBase></Link>
+          to="about" ><ButtonBase disableRipple className="transition duration-300 hover:scale-125">{t("sections.about")}</ButtonBase></Link>
         <Link smooth={true}
           duration={2000}
-          to="footer" ><ButtonBase className="transition duration-300 hover:scale-125">{t("sections.contact")}</ButtonBase></Link>
+          to="footer" ><ButtonBase disableRipple className="transition duration-300 hover:scale-125">{t("sections.contact")}</ButtonBase></Link>
       </div>
       {/* <div className="
         flex flex-col fixed top-0 right-0 pr-5 pt-5 md:pr-10 items-end visible

@@ -4,7 +4,7 @@ import "../i18n"
 import { useTranslation } from 'react-i18next';
 
 export default function FooterSocials() {
-  const { t, i18n } = useTranslation('common');
+  const { t, i18n } = useTranslation('translation');
 
   const handleButtonClick:any = (link:any, blank:any) => {
     window.open(link, blank);

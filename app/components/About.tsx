@@ -6,6 +6,7 @@ import Image from "next/image"
 import { Element } from "react-scroll"
 import "../i18n"
 import { useTranslation } from 'react-i18next';
+import { Fade } from "react-awesome-reveal"
 
 const HoverImage = ({ src, alt, width, height }: any) => {
   return (
@@ -25,7 +26,7 @@ const HoverImage = ({ src, alt, width, height }: any) => {
   );
 };
 
-function TechImages({className}:any) {
+function TechImages({ className }: any) {
   return (
     <div className={"flex flex-wrap justify-around items-center md:pt-16 " + className}>
       <HoverImage src={"/images/js_logo.png"} alt={"fff"} width={300} height={300} />
@@ -38,8 +39,8 @@ function TechImages({className}:any) {
   )
 }
 
-function AboutCard({className}:any) {
-  const { t, i18n } = useTranslation('common');
+function AboutCard({ className }: any) {
+  const { t, i18n } = useTranslation('translation');
 
   return (
     <div
@@ -54,7 +55,7 @@ function AboutCard({className}:any) {
         md:w-40 md:h-44
         lg:w-60 lg:h-64
         duration-300 transition hover:scale-110"
-        
+
 
       />
       <div className="flex flex-col w-full px-4 md:px-6 space-y-2 py-6">
@@ -66,7 +67,7 @@ function AboutCard({className}:any) {
 }
 
 export default function About() {
-  const { t, i18n } = useTranslation('common');
+  const { t, i18n } = useTranslation('translation');
 
   return (
     <Element name="about" className="flex flex-col justify-center items-center  space-y-10 md:py-36">
@@ -74,8 +75,11 @@ export default function About() {
         flex flex-row justify-center items-center font-bold text-5xl text-center
         md:p-4 xl:leading-loose
       ">{t("sections.about")}</p>
-      <AboutCard className="" />
-      <TechImages />
+      <Fade direction="up" duration={500} triggerOnce >
+
+        <AboutCard className="" />
+        <TechImages />
+      </Fade>
     </Element>
   )
 }
