@@ -28,11 +28,13 @@
     "next-translate": "^2.6.2",
     "next-transpile-modules": "^10.0.1",
     "react": "^18",
+    "react-animated-cursor": "^2.11.2",
     "react-awesome-reveal": "^4.2.7",
     "react-dom": "^18",
     "react-gridlines": "^1.1.7",
     "react-i18next": "^13.5.0",
     "react-scroll": "^1.9.0",
+    "react-toggle-dark-mode": "^1.1.1",
     "split-type": "^0.3.4",
     "three": "^0.158.0",
     "vite-plugin-glsl": "^1.2.0"

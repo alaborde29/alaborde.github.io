@@ -6,6 +6,7 @@ import React from "react"
 import MenuIcon from '@mui/icons-material/Menu';
 import "../i18n"
 import { useTranslation } from 'react-i18next';
+import DarkModeToggle from "./DarkModeToggle";
 
 export default function Menu() {
   const { t, i18n } = useTranslation('translation');
@@ -17,6 +18,7 @@ export default function Menu() {
       flex flex-col fixed top-0 right-0 pt-10 md:pr-10 items-end invisible z-20
       md:text-xl md:visible
       lg:text-3xl
+      text-black dark:text-white
     ">
         <Link smooth={true}
           duration={2000}
@@ -31,6 +33,7 @@ export default function Menu() {
         <Link smooth={true}
           duration={2000}
           to="footer" ><ButtonBase disableRipple className="transition duration-300 hover:scale-125">{t("sections.contact")}</ButtonBase></Link>
+        <DarkModeToggle/>
       </div>
       {/* <div className="
         flex flex-col fixed top-0 right-0 pr-5 pt-5 md:pr-10 items-end visible

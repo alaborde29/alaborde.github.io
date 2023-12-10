@@ -32,7 +32,7 @@ export default function Header() {
         h-screen w-screen flex justify-center items-center select-none
       ">
         <div className="
-          flex flex-col justify-center items-center p-4 text-white
+          flex flex-col justify-center items-center p-4 text-white 
         ">
           <div className="
             text-6xl -ml-14 font-bold

@@ -11,11 +11,12 @@ export default function Footer() {
     <Element name="footer" className="
       flex flex-col p-4 items-center mt-36
       md:flex-row md:items-end 
+      text-black dark:text-white
     ">
       <div className="
         flex flex-col w-full 
-        border-b-stone-800 border-b-2
-        md:border-r-stone-800 md:border-r-2 md:border-b-0
+        border-b-stone-800 darkborder-b-zinc-50 border-b-2
+        md:border-r-2 md:border-b-0
       ">
         <div className="
           flex flex-col justify-between items-center py-4 md:pr-8 space-y-8

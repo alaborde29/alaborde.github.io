@@ -6,6 +6,7 @@ const config: Config = {
     './components/**/*.{html,js,ts,jsx,tsx,mdx}',
     './app/**/*.{html,js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: "class",
   theme: {
     extend: {
       backgroundImage: {
