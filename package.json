@@ -34,6 +34,7 @@
     "react-gridlines": "^1.1.7",
     "react-i18next": "^13.5.0",
     "react-scroll": "^1.9.0",
+    "react-switch": "^7.0.0",
     "react-toggle-dark-mode": "^1.1.1",
     "split-type": "^0.3.4",
     "three": "^0.158.0",
