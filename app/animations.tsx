@@ -9,13 +9,13 @@ export const introAnimation = (onComplete: any) => {
 
   tl.set('.text2, .text3', { visibility: 'hidden' })
     .to('.text1', { visibility: 'visible', opacity: 0, filter: 'blur(0)', duration: 0 })
-    .to('.text1', { visibility: 'visible', opacity: 1, filter: 'blur(0)', duration: 1.5 })
+    .to('.text1', { visibility: 'visible', opacity: 1, filter: 'blur(0)', duration: 1 })
     .to('.text1', { opacity: 0, filter: 'blur(10px)', duration: 1 })
     .to('.text2', { visibility: 'visible', opacity: 0, filter: 'blur(0)', duration: 0 })
-    .to('.text2', { visibility: 'visible', opacity: 1, filter: 'blur(0)', duration: 1.5 })
+    .to('.text2', { visibility: 'visible', opacity: 1, filter: 'blur(0)', duration: 1 })
     .to('.text2', { opacity: 0, filter: 'blur(10px)', duration: 1 })
     .to('.text3', { visibility: 'visible', opacity: 0, filter: 'blur(0)', duration: 0 })
-    .to('.text3', { visibility: 'visible', opacity: 1, filter: 'blur(0)', duration: 1.5 })
+    .to('.text3', { visibility: 'visible', opacity: 1, filter: 'blur(0)', duration: 1 })
     .to('.text3', { opacity: 0, filter: 'blur(10px)', duration: 1 })
     .to('.background', { opacity: 0, filter: 'blur(10px)', duration: 0 });
 

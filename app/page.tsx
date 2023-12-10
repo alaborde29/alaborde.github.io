@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <main className="bg-zinc-50 dark:bg-neutral-950 h-full w-full overflow-x-hidden transition duration-300">
-      {/* <IntroAnimation  /> */}
+      <IntroAnimation  />
       <AnimatedCursor
         innerSize={8}
         outerSize={35}
