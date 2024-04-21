@@ -33,8 +33,8 @@ function TechImages({ className }: any) {
       <HoverImage src={"/images/ts_logo.svg"} alt={"fff"} width={300} height={300} />
       <HoverImage src={"/images/react_logo.png"} alt={"fff"} width={300} height={300} />
       <HoverImage src={"/images/native_logo.png"} alt={"fff"} width={300} height={300} />
-      <HoverImage src={"/images/cpp_logo.png"} alt={"fff"} width={300} height={300} />
-      <HoverImage src={"/images/c_logo.png"} alt={"fff"} width={300} height={300} />
+      <HoverImage src={"/images/swift-logo.png"} alt={"fff"} width={300} height={300} />
+      <HoverImage src={"/images/firebase-logo.png"} alt={"fff"} width={300} height={300} />
     </div>
   )
 }

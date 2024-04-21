@@ -27,13 +27,18 @@ export default function Work() {
         max-w-screen-xl mx-auto
         md:flex-row 
         ">
-        <Fade direction="up" triggerOnce delay={500}>
-
-          <WorkItem title="Portfolio"></WorkItem>
-          <WorkItem title="Nolosay"></WorkItem>
-        </Fade>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 space-y-7">
+          <Fade direction="left" triggerOnce delay={500} className="">
+            <WorkItem title="Portfolio"></WorkItem>
+            <WorkItem title="Nolosay"></WorkItem>
+          </Fade>
+          <Fade direction="right" triggerOnce delay={500} className="">
+            <WorkItem title="To Do List"></WorkItem>
+            <WorkItem title="Flashcard!"></WorkItem>
+          </Fade>
+        </div>
 
       </div>
-    </Element>
+    </Element >
   )
 }

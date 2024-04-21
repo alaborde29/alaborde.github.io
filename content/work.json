@@ -14,5 +14,21 @@
         "descFr": "Site vitrine Nolosay - Application de bureau Nolosay en cours de développement",
         "tags": "Website, React, Redwood JS, MUI",
         "image": "/images/nolosay.png"
+    },
+    {
+        "title": "To Do List",
+        "link": "https://github.com/alaborde29/Swift-todolist",
+        "descEn": "To do list application made for IOS",
+        "descFr": "Application de listage de tâches pour IOS",
+        "tags": "Mobile Application, IOS, Swift, Firebase",
+        "image": "/images/swift-todolist.png"
+    },
+    {
+        "title": "Flashcard!",
+        "link": "https://github.com/alaborde29/swift-flashcard",
+        "descEn": "Flashcard creation application made for IOS",
+        "descFr": "Application de création de flashcards pour IOS",
+        "tags": "Mobile Application, IOS, Swift, Firebase",
+        "image": "/images/swift-flashcard.png"
     }
 ]
